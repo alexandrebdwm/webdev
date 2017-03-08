@@ -2,19 +2,9 @@
  * Main JS entry file
  */
 
-// Enable HMR
-if (module.hot) {
-  module.hot.accept()
-}
+import App from 'App';
 
-// Partials
-import Foo from 'Foo'
-import Bar from 'Bar'
+console.info('Ready!');
 
-console.info('Ready! 🚀');
-
-const foo = new Foo();
-const bar = new Bar();
-
-foo.print();
-bar.print();
+/* eslint-disable no-new */
+const app = new App();

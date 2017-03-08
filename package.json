@@ -1,5 +1,5 @@
 {
-  "name": "heaj",
+  "name": "webdev",
   "version": "1.0.0",
   "description": "Développement web avancé - 3e année",
   "main": "index.html",
@@ -8,13 +8,13 @@
     "eslint": "./node_modules/.bin/eslint src/** || exit 0",
     "lint": "npm run markdownlint && npm run eslint",
     "clean": "rm -rf dist/*",
-    "dev": "npm run lint && npm run clean && webpack-dev-server --env=dev",
+    "dev": "npm run lint && webpack-dev-server --env=dev",
     "build": "npm run lint && npm run clean && webpack --env=prod --progress --profile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexandrebdwm/heaj.git"
+    "url": "git+https://github.com/alexandrebdwm/webdev.git"
   },
   "keywords": [
     "heaj",
@@ -27,7 +27,7 @@
   "bugs": {
     "url": "https://github.com/thierrymichel/heaj/issues"
   },
-  "homepage": "https://github.com/alexandrebdwm/heaj#readme",
+  "homepage": "https://github.com/alexandrebdwm/webdev#readme",
   "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-eslint": "^7.1.1",
@@ -38,5 +38,8 @@
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.1",
     "webpack-merge": "^3.0.0"
+  },
+  "dependencies": {
+      "three": "^0.84.0"
   }
 }
