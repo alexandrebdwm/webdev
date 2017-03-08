@@ -1,11 +1,11 @@
 {
-  "name": "webdev",
+  "name": "heaj",
   "version": "1.0.0",
   "description": "Développement web avancé - 3e année",
   "main": "index.html",
   "scripts": {
     "markdownlint": "./node_modules/.bin/markdownlint *.md || exit 0",
-    "eslint": "./node_modules/.bin/eslint _ressources/scripts/** || exit 0",
+    "eslint": "./node_modules/.bin/eslint src/** || exit 0",
     "lint": "npm run markdownlint && npm run eslint",
     "clean": "rm -rf dist/*",
     "dev": "npm run lint && npm run clean && webpack-dev-server --env=dev",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexandrebdwm/webdev.git"
+    "url": "git+https://github.com/alexandrebdwm/heaj.git"
   },
   "keywords": [
     "heaj",
@@ -22,12 +22,12 @@
     "learning",
     "threejs"
   ],
-  "author": "alexandre beckman <contact@alexandre-beckman.com> (http://www.alexandre-beckman.be/)",
+  "author": "Alexandre Beckman <contact@alexandre-beckman.com> (http://www.alexandre-beckman.be/)",
   "license": "ISC",
   "bugs": {
-    "url": "http://www.alexandre-beckman.be/"
+    "url": "https://github.com/thierrymichel/heaj/issues"
   },
-  "homepage": "http://www.alexandre-beckman.be/",
+  "homepage": "https://github.com/alexandrebdwm/heaj#readme",
   "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-eslint": "^7.1.1",
